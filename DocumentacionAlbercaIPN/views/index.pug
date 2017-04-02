@@ -1,5 +1,12 @@
-extends layout
+extends _layout
+block personalStyles
+  link(href='css/index.css', rel='stylesheet')
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="container-fluid")
+    div(class="row")
+      div(class="col-md-4")
+        h2 Menu
+      div(class="col-md-8")
+        div(class="col-md-12" id="main-info-container")
+          h2 Contenido
