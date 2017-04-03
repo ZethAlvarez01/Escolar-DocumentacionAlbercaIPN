@@ -3,28 +3,31 @@ block personalStyles
   link(href='css/index.css', rel='stylesheet')
 
 block content
-  div(class="container-fluid data-spy="scroll" data-target=".menu-element")
+  div(class="container-fluid")
     div(class="row")
-      div(class="col-md-3 menu-container")
+      nav(class="col-sm-3 menu-container navbar-fixed-top")
+        blockquote(class="menu-element")
+          p
+            a(href="#seccion-bienvenida" class="") Inicio
+            footer 
+              a(href="#sub-seccion-planteamiento-problema" class="sub-menu-element") Planteamiento del problema
+            footer 
+              a(href="#sub-seccion-antecedentes-desarollo" class="sub-menu-element") Antecedentes del desarrollo
+            footer 
+              a(href="#sub-seccion-objetivo" class="sub-menu-element") Nuestro Objetivo
         blockquote(class="menu-element")
           p 
-            a(href="#seccion-bienvenida") Inicio
-          footer Planteamiento del problema
-          footer Antecedentes del desarrollo
-          footer Nuestro Objetivo
+            a(href="#seccion-analisis") Analisis
         blockquote(class="menu-element")
           p 
-            a(href="#seccion-planteamiento-problema") Analisis
+            a(href="#seccion-diseno") Diseño
         blockquote(class="menu-element")
           p 
-            a(href="#seccion-antecedentes-desarollo") Diseño
-        blockquote(class="menu-element")
-          p 
-            a(href="#seccion-objetivo") Desarrollo
-      div(class="col-md-9")
+            a(href="#seccion-desarrollo") Desarrollo
+      div(class="col-sm-offset-3 col-sm-9")
         div(class="row")
-          div(class="col-md-12" id="main-info-container")
+          div(class="col-sm-12" id="main-info-container")
             include ./secciones/seccion-bienvenida.pug
-            include ./secciones/seccion-planteamiento-problema.pug
-            include ./secciones/seccion-antecedentes-desarrollo.pug
-            include ./secciones/seccion-objetivo.pug
+            include ./secciones/sub-seccion-planteamiento-problema.pug
+            include ./secciones/sub-seccion-antecedentes-desarrollo.pug
+            include ./secciones/sub-seccion-objetivo.pug

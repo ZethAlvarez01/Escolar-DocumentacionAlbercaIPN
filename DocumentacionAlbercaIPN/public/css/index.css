@@ -1,3 +1,46 @@
+/*------------------Pagina general***************************/
+.hr-custom{
+    border-color: rgb(190, 190, 190
+    );
+    border-width: 80%;
+}
+body{
+    padding-bottom: 60px;
+    position: relative; 
+}
+
+/*---------------------------Menu---------------------------*/
+.menu-container{
+    padding-left: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+.menu-element{
+    border-color: rgb(180, 180, 180);
+    font-size: 22px;
+}
+.menu-element p a{
+    color:black;
+}
+.sub-menu-element{
+    color:rgb(85, 85, 85);
+    font-size: 18px;
+}
+.sub-menu-element:hover{
+    color:rgb(20, 20, 20);
+    text-decoration:none;
+}
+.sub-menu-element:active{
+    color:rgb(20, 20, 20);
+}
+/*-----------------------Secciones---------------------------*/
+.section-custom{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+}
+.section-title{
+    font-family: 'Oswald', sans-serif;
+}
+
 /*--------------------------Footer--------------------------*/
 .color-ipn{
     background-color: rgb(140, 80, 105);
@@ -7,29 +50,6 @@
 }
 .footer-text{
     color: white;
-}
-/*---------------------------Menu---------------------------*/
-.menu-container{
-    padding-left: 0px;
-    font-family: 'Oswald', sans-serif;
-}
-.menu-element{
-    border-color: rgb(190, 190, 190);
-    font-size: 20px;
-}
-/*-----------------------Secciones---------------------------*/
-.section-custom{
+    padding-top: 15px;
     font-family: 'Roboto Condensed', sans-serif;
-}
-.section-title{
-    font-family: 'Oswald', sans-serif;
-}
-/*------------------Pagina general***************************/
-.hr-custom{
-    border-color: rgb(190, 190, 190
-    );
-    border-width: 80%;
-}
-body{
-    padding-bottom: 60px;
 }
