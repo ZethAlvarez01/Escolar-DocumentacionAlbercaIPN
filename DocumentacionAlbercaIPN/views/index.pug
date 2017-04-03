@@ -5,8 +5,19 @@ block personalStyles
 block content
   div(class="container-fluid")
     div(class="row")
-      div(class="col-md-4")
-        h2 Menu
-      div(class="col-md-8")
-        div(class="col-md-12" id="main-info-container")
-          h2 Contenido
+      div(class="col-md-3 menu-container")
+        blockquote(class="menu-element")
+          p Inicio
+        blockquote(class="menu-element")
+          p Planteamiento del problema
+        blockquote(class="menu-element")
+          p Antecedentes de desarrollo
+        blockquote(class="menu-element")
+          p Nuestro Objetivo
+      div(class="col-md-9")
+        div(class="row")
+          div(class="col-md-12" id="main-info-container")
+            include ./secciones/seccion-bienvenida.pug
+            include ./secciones/seccion-planteamiento-problema.pug
+            include ./secciones/seccion-antecedentes-desarrollo.pug
+            include ./secciones/seccion-objetivo.pug

@@ -8,3 +8,11 @@
 .footer-text{
     color: white;
 }
+/*---------------------------Menu---------------------------*/
+.menu-container{
+    padding-left: 0px;
+}
+.menu-element{
+    border-color: rgb(190, 190, 190);
+    font-size: 20px;
+}
