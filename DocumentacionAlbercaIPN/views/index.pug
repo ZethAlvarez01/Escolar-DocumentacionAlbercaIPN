@@ -3,17 +3,24 @@ block personalStyles
   link(href='css/index.css', rel='stylesheet')
 
 block content
-  div(class="container-fluid")
+  div(class="container-fluid data-spy="scroll" data-target=".menu-element")
     div(class="row")
       div(class="col-md-3 menu-container")
         blockquote(class="menu-element")
-          p Inicio
+          p 
+            a(href="#seccion-bienvenida") Inicio
+          footer Planteamiento del problema
+          footer Antecedentes del desarrollo
+          footer Nuestro Objetivo
         blockquote(class="menu-element")
-          p Planteamiento del problema
+          p 
+            a(href="#seccion-planteamiento-problema") Analisis
         blockquote(class="menu-element")
-          p Antecedentes de desarrollo
+          p 
+            a(href="#seccion-antecedentes-desarollo") Diseño
         blockquote(class="menu-element")
-          p Nuestro Objetivo
+          p 
+            a(href="#seccion-objetivo") Desarrollo
       div(class="col-md-9")
         div(class="row")
           div(class="col-md-12" id="main-info-container")

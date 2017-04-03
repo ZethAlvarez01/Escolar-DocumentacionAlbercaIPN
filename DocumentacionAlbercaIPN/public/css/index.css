@@ -11,8 +11,25 @@
 /*---------------------------Menu---------------------------*/
 .menu-container{
     padding-left: 0px;
+    font-family: 'Oswald', sans-serif;
 }
 .menu-element{
     border-color: rgb(190, 190, 190);
     font-size: 20px;
+}
+/*-----------------------Secciones---------------------------*/
+.section-custom{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.section-title{
+    font-family: 'Oswald', sans-serif;
+}
+/*------------------Pagina general***************************/
+.hr-custom{
+    border-color: rgb(190, 190, 190
+    );
+    border-width: 80%;
+}
+body{
+    padding-bottom: 60px;
 }
