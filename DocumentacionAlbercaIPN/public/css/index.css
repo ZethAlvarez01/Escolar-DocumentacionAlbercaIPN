@@ -15,22 +15,19 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 .menu-element{
-    border-color: rgb(180, 180, 180);
-    font-size: 22px;
-}
-.menu-element p a{
     color:black;
+    font-size: 22px;
+    background-color: none;
 }
 .sub-menu-element{
     color:rgb(85, 85, 85);
     font-size: 18px;
 }
-.sub-menu-element:hover{
-    color:rgb(20, 20, 20);
-    text-decoration:none;
+.menu-element.active a:hover{
+    background-color:black;
 }
-.sub-menu-element:active{
-    color:rgb(20, 20, 20);
+.menu-element.active a:focus{
+    background-color:black;
 }
 /*-----------------------Secciones---------------------------*/
 .section-custom{
