@@ -6,27 +6,25 @@ block content
   div(class="container-fluid")
     div(class="row")
       nav(class="col-sm-3 menu-container navbar-fixed-top" id="myNavSpy" role="navigation")
-        ul(class="nav nav-pills nav-stacked" role="tablist")
+        ul(class="nav nav-stacked" role="tablist")
           li(class="menu-element-container")
-            a(href='#sub-seccion-contexto' class="menu-element") Analisis
-            ul(id="inicioSpy")
+            a(href='#seccion-contexto-software' class="menu-element") Contexto del Proyecto
+            ul
               li(class="sub-menu-element-container")
-                a(href='#sub-seccion-contexto' class="sub-menu-element") Contexto
+                a(href='#sub-seccion-alberca' class="sub-menu-element") Alberca
               li
                 a(href='#sub-seccion-planteamiento-problema' class="sub-menu-element") Planteamiento del problema
               li
                 a(href='#sub-seccion-antecedentes-desarrollo' class="sub-menu-element") Antecedentes del desarrollo
               li
                 a(href='#sub-seccion-objetivo' class="sub-menu-element") Objetivo
-          li
-            a(href='#section2') Section 2
-          li
-            a(href='#section3') Section 3
+          li(class="menu-element-container")
+            a(href='#seccion-inscripciones' class="menu-element") Sistema de inscripciones
+            ul
+              li(class="sub-menu-element-container")
+                a(href='#sub-seccion-analisis' class="sub-menu-element") Analisis
 
       div(class="col-sm-offset-3 col-sm-9")
         div(class="row" id="main-info-container")
-          div(class="col-sm-12")
-            include ./secciones/sub-seccion-contexto.pug
-            include ./secciones/sub-seccion-planteamiento-problema.pug
-            include ./secciones/sub-seccion-antecedentes-desarrollo.pug
-            include ./secciones/sub-seccion-objetivo.pug
+          include ./secciones/seccion-contexto-software.pug
+          include ./secciones/seccion-inscripciones.pug
