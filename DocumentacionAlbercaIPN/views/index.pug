@@ -1,4 +1,6 @@
+//- _layout es la plantilla padre de cualquier pagina nueva que se agregue
 extends _layout
+//- Al usar block se inserta codigo en la parte que se definio como block en layaut
 block personalStyles
   link(href='css/index.css', rel='stylesheet')
 
@@ -6,6 +8,7 @@ block content
   div(class="container-fluid")
     div(class="row")
       nav(class="col-sm-3 menu-container navbar-fixed-top" id="myNavSpy" role="navigation")
+        //- Es muy importante definir con clases cuales son los menu elements y submenu elements
         ul(class="nav nav-stacked" role="tablist")
           li(class="menu-element-container")
             a(href='#seccion-contexto-software' class="menu-element") Contexto del Proyecto
@@ -26,5 +29,6 @@ block content
 
       div(class="col-sm-offset-3 col-sm-9")
         div(class="row" id="main-info-container")
-          include ./secciones/seccion-contexto-software.pug
-          include ./secciones/seccion-inscripciones.pug
+          //- Contexto proyecto esta dedicado a hablar de manera general del proyecto
+              porque para que quienes etc.
+          include ./secciones/seccion-contexto-proyecto.pug

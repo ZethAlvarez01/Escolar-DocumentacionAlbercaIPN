@@ -5,7 +5,7 @@
     border-width: 80%;
 }
 body{
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     position: relative; 
 }
 
@@ -61,4 +61,7 @@ nav ul li.active a.menu-element{
     color: white;
     padding-top: 15px;
     font-family: 'Roboto Condensed', sans-serif;
+}
+.white{
+    color:white;
 }
