@@ -1,26 +1,31 @@
 /*------------------Pagina general***************************/
-.hr-custom{
-    border-color: rgb(190, 190, 190
-    );
+
+.hr-custom {
+    border-color: rgb(190, 190, 190);
     border-width: 80%;
 }
-body{
+
+body {
     padding-bottom: 70px;
-    position: relative; 
+    position: relative;
 }
 
+
 /*---------------------------Menu---------------------------*/
-.menu-container{
+
+.menu-container {
     padding-left: 0px;
     font-family: 'Oswald', sans-serif;
 }
-.menu-element{
-    color:black;
+
+.menu-element {
+    color: black;
     font-size: 22px;
     background-color: none;
 }
-nav ul li.active a.menu-element{
-    color:black;
+
+nav ul li.active a.menu-element {
+    color: black;
     font-size: 22px;
     background-color: rgb(230, 230, 230);
     -webkit-border-top-right-radius: 10px;
@@ -30,38 +35,60 @@ nav ul li.active a.menu-element{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.sub-menu-element{
-    color:rgb(85, 85, 85);
+
+.sub-menu-element {
+    color: rgb(85, 85, 85);
     font-size: 18px;
 }
-.nav ul li.active a.sub-menu-element{
-    color:rgb(40, 40, 40);
+
+.nav ul li.active a.sub-menu-element {
+    color: rgb(40, 40, 40);
     list-style-type: square;
 }
-.nav ul li.active{
+
+.nav ul li.active {
     list-style-type: square;
 }
+
+
 /*-----------------------Secciones---------------------------*/
-.section-custom{
+
+.section-custom {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 17px;
 }
-.section-title{
+
+.section-title {
     font-family: 'Oswald', sans-serif;
 }
 
+
 /*--------------------------Footer--------------------------*/
-.color-ipn{
+
+.color-ipn {
     background-color: rgb(140, 80, 105);
 }
-.navbar-fixed-bottom-custom{
-    height: 60px;
+
+.navbar-fixed-bottom-custom {
+    padding-top: 4px;
 }
-.footer-text{
+
+.footer-text {
     color: white;
     padding-top: 15px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.white{
-    color:white;
+
+.white {
+    color: white;
+}
+
+.menu-element-footer {}
+
+.fa-custom-footer-menu:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
 }
