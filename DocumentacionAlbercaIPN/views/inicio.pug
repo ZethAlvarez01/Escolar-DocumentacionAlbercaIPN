@@ -11,24 +11,20 @@ block content
         //- Es muy importante definir con clases cuales son los menu elements y submenu elements
         ul(class="nav nav-stacked" role="tablist")
           li(class="menu-element-container")
-            a(href='#seccion-contexto-software' class="menu-element") Contexto del Proyecto
+            a(href='#seccion-contexto-proyecto' class="menu-element") Contexto del Proyecto
             ul
               li(class="sub-menu-element-container")
-                a(href='#sub-seccion-alberca' class="sub-menu-element") Alberca
+                a(href='#sub-seccion-inicio' class="sub-menu-element") Alberca
               li
                 a(href='#sub-seccion-planteamiento-problema' class="sub-menu-element") Planteamiento del problema
               li
-                a(href='#sub-seccion-antecedentes-desarrollo' class="sub-menu-element") Antecedentes del desarrollo
-              li
                 a(href='#sub-seccion-objetivo' class="sub-menu-element") Objetivo
-          li(class="menu-element-container")
-            a(href='#seccion-inscripciones' class="menu-element") Sistema de inscripciones
-            ul
-              li(class="sub-menu-element-container")
-                a(href='#sub-seccion-analisis' class="sub-menu-element") Analisis
-
+              li
+                a(href='#sub-seccion-situacion-inicial' class="sub-menu-element") Situación Inicial
+              li
+                a(href='#sub-seccion-desicion' class="sub-menu-element") Nuestra Desición
       div(class="col-sm-offset-3 col-sm-9")
         div(class="row" id="main-info-container")
           //- Contexto proyecto esta dedicado a hablar de manera general del proyecto
               porque para que quienes etc.
-          include ./secciones/seccion-contexto-proyecto.pug
+          include ./secciones/contexto/seccion-contexto-proyecto.pug

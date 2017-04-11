@@ -70,7 +70,8 @@ nav ul li.active a.menu-element {
 }
 
 .navbar-fixed-bottom-custom {
-    padding-top: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .footer-text {
