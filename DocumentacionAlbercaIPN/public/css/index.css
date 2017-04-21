@@ -83,8 +83,9 @@ nav ul li.active a.menu-element {
 .white {
     color: white;
 }
-
-.menu-element-footer {}
+.black{
+    color:black;
+}
 
 .fa-custom-footer-menu:hover {
     transform: scale(1.1, 1.1);
