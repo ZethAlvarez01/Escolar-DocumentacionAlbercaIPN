@@ -41,21 +41,22 @@ nav ul li.active a.menu-element {
     font-size: 18px;
 }
 
-.nav ul li.active a.sub-menu-element {
-    color: rgb(40, 40, 40);
-    list-style-type: square;
+.nav ul li.active {
+    list-style-type: disc;
 }
 
-.nav ul li.active {
-    list-style-type: square;
+.nav ul li.active a.sub-menu-element {
+    color: rgb(40, 40, 40);
+    list-style-type: disc;
 }
+
 .nav ul li ul li.active a.sub-menu-element {
     color: rgb(50, 50, 50);
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 .nav ul li ul li.active {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 
@@ -91,8 +92,9 @@ nav ul li.active a.menu-element {
 .white {
     color: white;
 }
-.black{
-    color:black;
+
+.black {
+    color: black;
 }
 
 .fa-custom-footer-menu:hover {
