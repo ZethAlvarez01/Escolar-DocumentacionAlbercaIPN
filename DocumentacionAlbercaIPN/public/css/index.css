@@ -49,6 +49,14 @@ nav ul li.active a.menu-element {
 .nav ul li.active {
     list-style-type: square;
 }
+.nav ul li ul li.active a.sub-menu-element {
+    color: rgb(50, 50, 50);
+    list-style-type: circle;
+}
+
+.nav ul li ul li.active {
+    list-style-type: circle;
+}
 
 
 /*-----------------------Secciones---------------------------*/
