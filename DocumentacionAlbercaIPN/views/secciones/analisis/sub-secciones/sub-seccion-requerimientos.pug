@@ -1,4 +1,4 @@
-section(class="section-custom" id="sub-seccion-requerimientos")   
+section(class="section-custom" id="sub-seccion-requerimientos")
     div(class="row")
         div(class="col-sm-12")
             h2(class="section-title") Requerimientos
@@ -7,7 +7,7 @@ section(class="section-custom" id="sub-seccion-requerimientos")
             //-Inicia Requerimiento
             p
                 strong RF1:
-                |&nbsp Cuando el aspirante ingrese al sistema para realizar su pre-registro, deberá llenar un formulario proporcionando los siguientes datos: 
+                |&nbsp Cuando el aspirante ingrese al sistema para realizar su pre-registro, deberá llenar un formulario proporcionando los siguientes datos:
             ol
                 li Número de boleta
                 li Escuela de procedencia
@@ -37,4 +37,134 @@ section(class="section-custom" id="sub-seccion-requerimientos")
                 li Grupo
                 li Matrícula
                 li Lugar, hora y fecha de entrega de documentos
-
+            //-Inicia Requerimiento
+            p
+                strong RF6:
+                |&nbsp El sistema enviará la Hoja de Registro al correo electrónico que proporcionó el aspirante.
+            h3(class="text-center black") Administrador
+            //-Inicia Requerimiento
+            p
+                strong RF7:
+                |&nbsp El administrador deberá autenticarse ingresando su nombre de usuario y contraseña que proporcionó al registrarse en el sistema.
+            //-Inicia Requerimiento
+            p
+                strong RF8:
+                |&nbsp En caso de quedar lugares disponibles al término de la convocatoria, el sistema permitirá que el administrador inscriba aspirantes que no realizaron su pre-registro.
+            //-Inicia Requerimiento
+            p
+                strong RF9:
+                |&nbsp El administrador podrá inscribir alumnos al equipo representativo en cualquier momento.
+            //-Inicia Requerimiento
+            p
+                strong RF10:
+                |&nbsp El administrador podrá almacenar los datos personales de los alumnos que inscriba al equipo representativo, los resultados de las pruebas.
+            //-Inicia Requerimiento
+            p
+                strong RF11:
+                |&nbsp El administrador podrá modificar el nivel del alumno según: enseñanza básica, desarrollo y equipo representativo.
+            //-Inicia Requerimiento
+            p
+                strong RF12:
+                |&nbsp El administrador podrá almacenar nuevos datos de los alumnos cuando sean inscritos al equipo representativo. Estos datos son:
+            ol
+                li Tiempo de las pruebas realizadas.
+                li Horario en que puede asistir a clases.
+            //-Inicia Requerimiento
+            p
+                strong RF13:
+                |&nbsp El administrador podrá dar de baja a cualquier alumno en el momento que desee.
+            //-Inicia Requerimiento
+            p
+                strong RF14:
+                |&nbsp El administrador definirá en el sistema el número máximo de lugares que ofertará en el periodo escolar.
+            //-Inicia Requerimiento
+            p
+                strong RF15:
+                |&nbsp El administrador podrá dar de alta grupos asignándoles un horario, entrenador, identificador, matrícula y lugares disponibles.
+            //-Inicia Requerimiento
+            p
+                strong RF16:
+                |&nbsp El administrador podrá modificar los datos de los grupos existentes.
+            //-Inicia Requerimiento
+            p
+                strong RF17:
+                |&nbsp El administrador podrá eliminar grupos existentes.
+            //-Inicia Requerimiento
+            p
+                strong RF18:
+                |&nbsp El administrador podrá visualizar los datos de los grupos existentes.
+                //-Inicia Requerimiento
+            p
+                strong RF19:
+                |&nbsp El administrador podrá inscribir al segundo nivel únicamente a los alumnos que cuentan con al menos el 80% de asistencias en el curso de enseñanza básica.
+            //-Inicia Requerimiento
+            p
+                strong RF20:
+                |&nbsp El administrador podrá dar de alta personal de apoyo para inscripciones ingresando un nombre de usuario y una contraseña.
+            //-Inicia Requerimiento
+            p
+                strong RF21:
+                |&nbsp El administrador podrá eliminar personal de apoyo para inscripciones.
+            //-Inicia Requerimiento
+            p
+                strong RF22:
+                |&nbsp El administrador podrá modificar los datos del personal de apoyo para inscripciones.
+            //-Inicia Requerimiento
+            p
+                strong RF23:
+                |&nbsp El administrador podrá visualizar los datos del personal de apoyo para inscripciones.
+            h3(class="text-center black") Personal de apoyo Inscripción
+            //-Inicia Requerimiento
+            p
+                strong RF24:
+                |&nbsp El personal de apoyo de inscripción registrado en el sistema deberá autenticarse ingresando su nombre de usuario y contraseña que le proporcionó su administrador.
+            //-Inicia Requerimiento
+            p
+                strong RF25:
+                |&nbsp El personal de apoyo de inscripción podrá buscar aspirantes ingresando su número de boleta o nombre.
+            //-Inicia Requerimiento
+            p
+                strong RF26:
+                |&nbsp El personal de apoyo de inscripción podrá filtrar el resultado de la búsqueda por aspirantes que se inscriben en ese día y hora.
+            //-Inicia Requerimiento
+            p
+                strong RF27:
+                |&nbsp El personal de apoyo de inscripción podrá concluir la inscripción del aspirante de acuerdo a RN1 y RN2.
+            h2(class="section-title") Reglas de Negocio
+            hr(class="hr-custom")
+            //-Inicia Regla
+            p
+                strong RN1:
+                |&nbsp Se inscribirá al aspirante sólo si entrega toda la documentación requerida.
+            //-Inicia Regla
+            p
+                strong RN2:
+                |&nbsp No se inscribirá a los aspirantes que no se presenten el día y hora que se les asignó en la etapa de pre-registro.
+            //-Inicia Regla
+            p
+                strong RN3:
+                |&nbsp No se permite que haya grupos con más de 18 lugares disponibles.
+            //-Inicia Regla
+            p
+                strong RN4:
+                |&nbsp El número máximos de cursos al que un alumno puede inscribirse es de dos,  independientemente del tipo de enseñanza.
+            //-Inicia Regla
+            p
+                strong RN5:
+                |&nbsp La clase tendrá una duración de 50 minutos, más 10 minutos de cambios entre horarios.
+            //-Inicia Regla
+            p
+                strong RN6:
+                |&nbsp El alumno tiene máximo un semestre de tolerancia para poder reinscribirse y continuar su formación en el siguiente curso.
+            //-Inicia Regla
+            p
+                strong RN7:
+                |&nbsp Un aspirante sólo podrá realizar su pre-registro una vez por periodo.
+            //-Inicia Regla
+            p
+                strong RN8:
+                |&nbsp Existen tres tipos de matrículas, según los días en los que se imparten clases:
+            ol
+                li Lunes, Miércoles y Viernes.
+                li Martes y Jueves.
+                li Sábados y Domingos.
