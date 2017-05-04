@@ -14,6 +14,9 @@ router.get('/analisis', function(req, res, next) {
 router.get('/modelos', function(req, res, next) {
     res.render('modelos', { title: 'Modelos del proyecto' });
 });
+router.get('/funciones', function(req, res, next) {
+    res.render('funciones', { title: 'Codificación' });
+});
 
 
 module.exports = router;

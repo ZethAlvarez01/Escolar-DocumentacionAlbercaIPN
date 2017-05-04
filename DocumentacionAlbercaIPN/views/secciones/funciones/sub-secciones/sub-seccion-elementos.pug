@@ -1,0 +1,50 @@
+section(class="section-custom" id="sub-seccion-elementos")
+    div(class="row")
+        div(class="col-sm-12")
+            h2(class="section-title") Elementos para el pre-registro
+            hr(class="hr-custom")
+            div(class="row")
+                div(class="col-sm-12")
+                    h3 Se tienen las siguentes clases:
+                    ul
+                        li Alumno.php
+                        li Convocatoria.php
+                        li Grupo.php
+                        li Preregistro.php
+                    h4 Las 4 clases contienen los siguientes 3 atributos:
+                    ol  
+                        li table
+                            ul 
+                                li 
+                                    strong Tipo de dato: 
+                                    |&nbsp;Cadena
+                                li(class="text-justify")
+                                    strong Proposito: 
+                                    |Almacena el nombre de la tabla en la base de datos en la que se va a almacenar la información que contenga el objeto en cuestión. Por ejemplo, si el objeto es de tipo Alumno, entonces el valor del atributo table es “Alumnos”, ya que este es el nombre de la tabla que contiene la información de los alumnos en la base de datos.
+                        li primaryKey
+                            ul 
+                                li 
+                                    strong Tipo de dato: 
+                                    |&nbsp;Cadena
+                                li(class="text-justify")
+                                    strong Proposito:
+                                    |&nbsp;Almacena el nombre del campo que es llave primaria de la tabla en cuestión de la base de datos. Por ejemplo, para la clase Convocatoria, el valor de este atributo es “idConvocatoria”, porque este es el nombre del campo que funge como llave primaria en la tabla Convocatorias.
+                        li fillable
+                            ul 
+                                li 
+                                    strong Tipo de dato:
+                                    |&nbsp;Arreglo de cadenas
+                                li(class="text-justify")
+                                    strong Proposito: 
+                                    |Contiene los nombres de todos los campos de la tabla en cuestión. Por ejemplo, para la clase Grupo, el atributo fillable contiene, entre otras, las cadenas siguientes: “tipoCurso”, “capacidad”, “coach”. Estos son los nombres de algunos de los campos de la tabla Grupos de la base de datos.
+                        p(class="text-justify")
+                            strong Nota:
+                            |&nbsp;En Laravel se considera como un hecho que las llaves primarias de las tablas de una base de datos son de tipo entero autoincrementale. Pero es bien sabido que esto no siempre es así. Por lo que se necesita indicar cuando este no es el caso mediante un atributo de tipo booleano. El atributo “incrementng” solamente es parte de la clase Alumno.php y Convocatoria.php, ya que las llaves primarias de las dos tablas que almacenarán la información de los objetos tanto de tipo Alumno como de tipo Convocatoria, son cadenas de caracteres.
+                        li incremeanting
+                            ul 
+                                li 
+                                    strong Tipo de dato:
+                                    |&nbsp;Booleano
+                                li(class="text-justify")
+                                    strong Proposito: 
+                                    |Bandera que da la señal al framework Laravel de que la llave primaria de la tabla en cuestión es o no un entero autoincremental. Para el caso de la clase Alumno.php y Convocatoria.php, el valor del atributo incrementing se establece como false para indicar que ni el tipo de dato de la llave primaria de la tabla Alumnos ni el de la llave primaria de la tabla Convocatorias no es un entero autoincremental.

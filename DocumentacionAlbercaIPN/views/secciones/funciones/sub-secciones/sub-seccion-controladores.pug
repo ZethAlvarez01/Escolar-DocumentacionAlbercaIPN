@@ -1,0 +1,57 @@
+section(class="section-custom" id="sub-seccion-controladores")
+	div(class="row")
+		div(class="col-sm-12")
+			h2(class="section-title") Controladores
+			hr(class="hr-custom")
+			div(class="row")
+				div(class="col-sm-12")
+					h4(class="black") PRegController.php
+					p(class="text-justify black") Esta clase contiene la lógica necesaria para llevar y traer información a la base de datos. Éste es el controlador al que se hace referencia en el archivo routes.php.
+					p(class="text-justify")
+						strong Nota:
+						|&nbsp;Los objetos tipo Request capturan la información introducida en los formularios, también tiene los archivos que se envían, así como las variables de sesión.
+					p A continuación se enlistan los métodos contenidos en esta clase:
+					li altag
+						ul
+							li
+								strong Recibe:
+								|&nbsp;Un objeto de tipo Request
+							li
+								strong Regresa:
+								|&nbsp;No regresa nada.
+							li(class="text-justify")
+								strong Propósito: 
+								|&nbsp;Da de alta a un alumno en un grupo específico.
+					li index
+						ul
+							li
+								strong Recibe:
+								|&nbsp;Un objeto de tipo Request.
+							li
+								strong Regresa:
+								|&nbsp;Una vista de todos los grupos disponibles.
+							li(class="text-justify")
+								strong Propósito: 
+								|&nbsp;Muestra todos los grupos disponibles.
+					li create
+						ul
+							li
+								strong Recibe:
+								|&nbsp;No recibe nada.
+							li
+								strong Regresa:
+								|&nbsp;Una vista del formulario de preregistro.
+							li(class="text-justify")
+								strong Propósito:
+								|&nbsp;Muestra el formulario de preregistro.
+					li store
+						ul
+							li
+								strong Recibe:
+								|&nbsp;Un objeto de tipo Request.
+							li
+								strong Regresa:
+								|&nbsp;Regresa a la vista de los grupos disponibles.
+							li(class="text-justify")
+								strong Propósito:
+								|&nbsp;Agrega un alumno nuevo a la lista de alumnos.
