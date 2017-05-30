@@ -3,4 +3,140 @@ section(class="section-custom" id="sub-seccion-herramientas")
         div(class="col-sm-12")
             h2(class="section-title") ¿Qué herramientas se utilizaran?
             hr(class="hr-custom")
+            h3(class="text-center black")
             p(class="text-justify") 
+            //- Descripcion de las herramientas utilizadas
+            p
+                |&nbsp Se hace un listado de las herramientas utilizadas para la creación de el sistema para la alberca perteneciente al IPN.
+            // -Herramienta PHP
+            h2 PHP
+            p
+                |&nbsp PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.
+            h3 ¿Qué puede hacer PHP?
+            p 
+                |&nbsp PHP está enfocado principalmente a la programación de scripts del lado del servidor, por lo que se puede hacer cualquier cosa que pueda hacer otro programa CGI, como recopilar datos de formularios, generar páginas con contenidos dinámicos, o enviar y recibir cookies.
+                |&nbsp Existen principalmente tres campos principales donde se usan scripts de PHP:
+            ul
+                li Scripts del lado del servidor. Este es el campo más tradicional y el foco principal. Son necesarias tres cosas para que esto funcione. El analizador de PHP (módulo CGI o servidor), un servidor web y un navegador web.
+                li Scripts desde la línea de comandos. Se puede crear un script de PHP y ejecutarlo sin necesidad de un servidor o navegador. Solamente es necesario el analizador de PHP para utilizarlo de esta manera. 
+                li Escribir aplicaciones de escritorio. Probablemente PHP no sea el lenguaje más apropiado para crear aplicaciones de escritorio con una interfaz gráfica de usuario, pero si se conoce bien PHP, y se quisiera utilizar algunas características avanzadas de PHP en aplicaciones del lado del cliente.
+            p
+                |&nbsp PHP es multiplataforma, esto quiere decir que se puede emplear en todos los sistemas operativos principales, incluyendo Linux, muchas variantes de Unix (incluyendo HP-UX, Solaris y OpenBSD), Microsoft Windows, Mac OS X, RISC OS y probablemente otros más. PHP admite la mayoría de servidores web de hoy en día, incluyendo Apache, IIS, y muchos otros. Esto incluye cualquier servidor web que pueda utilizar el binario de PHP FastCGI, como lighttpd y nginx. PHP funciona tanto como módulo como procesador de CGI.
+            p
+                |&nbsp Una de las características más potentes y destacables de PHP es su soporte para un amplio abanico de bases de datos. 
+            p
+                |&nbsp PHP también cuenta con soporte para comunicarse con otros servicios usando protocolos tales como LDAP, IMAP, SNMP, NNTP, POP3, HTTP, COM (en Windows) y muchos otros. También se pueden crear sockets de red puros e interactuar usando cualquier otro protocolo. Y hablando de interconexión, PHP tiene soporte para la instalación de objetos de Java y emplearlos de forma transparente como objetos de PHP.
+            h3 PHP 5
+            p
+                |&nbsp En específico, para nuestro sistema, se utilizó la versión 5.6. Algunas de las ventajas y características que encontramos de esta versión son: 
+            ul
+                li Mejor soporte para la Programación Orientada a Objetos, que en versiones anteriores era extremadamente rudimentario, con PHP Data Objects.
+                li Mejoras de rendimiento.
+                li Mejor soporte para MySQL con extensión completamente reescrita.
+                li Mejor soporte a XML (XPath, DOM, etc.).
+                li Soporte nativo para SQLite.
+                li Soporte integrado para SOAP.
+                li Iteradores de datos.
+                li Manejo de excepciones.
+                li Algoritmo de hash gost-crypto. Implementa la función de hash GOST empleando las tablas CryptoPro S-box
+                li Mejoras en SSL/TLS. Mejoras en el soporte de SSL/TLS, incluyendo la habilitación de la verificación del par por omisión, soporte para la comparación de huellas digitales de certificados, mitigación de ataques de negociado TLS y mayor control en los ajustes de protocolos y verificaciones.
+                li Ficheros grandes. Ahora se pueden subir ficheros de más de 2 GB.
+            //- Herramienta Laravel  
+            h2 Laravel 
+            p 
+                |&nbsp Una de las herramientas que acompañaron a PHP en la realización del sistema fue Laravel, específicamente, la versión de Laravel 5.1. 
+            h3 ¿Qué es Laravel? 
+            p 
+                |&nbsp Es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5. Su objetivo es desarrollar aplicaciones con código PHP de forma elegante y simple. Fue creado en 2011 y tiene una gran influencia de frameworks como Ruby on Rails, Sinatra y ASP.NET MVC.
+            p 
+                |&nbsp Laravel permite el uso de una sintaxis elegante y expresiva para crear código de forma sencilla y permitiendo multitud de funcionalidades. Intenta aprovechar lo mejor de otros frameworks y aprovechar las características de las últimas versiones de PHP 2. Gran parte de Laravel está formado por dependencias, especialmente de Symfony, esto implica que el desarrollo de Laravel dependa también del desarrollo de sus dependencias.
+            h3 Patrón MVC
+            p
+                |&nbsp Está hecho con la arquitectura MVC y resuelve necesidades actuales como manejo de eventos y autenticación de usuarios. Además, cuenta con un código modular y extensible por medio de un administrador de paquetes y un un soporte robusto para manejo de bases de datos. Laravel propone en el desarrollo usar Routes with Closures, en lugar de un MVC tradicional con el objetivo de hacer el código más claro. Aun así permite el uso de MVC tradicional.
+            ul
+                li Modelo. Laravel incluye un sistema de mapeo de datos relacional llamado Eloquent ORM que facilita la creación de modelos.
+                li Vistas. Laravel incluye de paquete un sistema de procesamiento de plantillas llamado Blade. Este sistema de plantillas favorece un código mucho más limpio en las Vistas, además de incluir un sistema de Caché que lo hace mucho más rápido.
+                li Controlador. Los controladores contienen la lógica de la aplicación y permiten organizar el código en clases sin tener que escribirlo todo en las rutas. Todos los controladores deben extenderse de la clase BaseController.
+            h3 Modular y extensible
+            p 
+                |&nbsp Laravel es modular y extensible. Esto quiere decir que permite agregar todo lo necesario a través de su directorio Packalyst que cuenta con más de 5500 paquetes. También, permite desarrollar fácil y rápidamente micro-servicios y APIs de gran rendimiento para los proyectos.
+            h3 Características
+            ul 
+                li Sistema de ruteo, también RESTful
+                li Blade, Motor de plantillas
+                li Peticiones Fluent
+                li Eloquent ORM
+                li Basado en Composer
+                li Soporte para el caché
+                li Soporte para MVC
+                li Usa componentes de Symfony
+                li Adopta las especificacione PSR-2 y PSR-4.
+            p 
+                |&nbsp Además de las características mencionadas anteriormente. Laravel 5.1 agrega las siguientes: 
+            ul 
+                li Soporte para multiples drivers de autenticación
+                li Model binding implícito
+                li Global scopes de Eloquent mejorados
+                li Generador del sistema de autenticación incluido por defecto en Laravel 5.0 (login, logout, etc.)
+                li Middleware para limitar el número de peticiones por dirección IP por tiempo
+                li Posibilidad de agrupar varios middleware
+                li Mejoras en la validación de array de formularios
+            //- Herramienta MySQL
+            h2 MySQL
+            p
+                |&nbsp Para la creación del modelo de la base de datos y posteriormente realizar la conexión con php, utilizamos la herramienta MySQL.
+            h2 ¿Qué es MySQL?
+            p
+                |&nbsp MySQL es un manejador de bases de datos principalmente utilizado en las aplicaciones WEB en conjunto con PHP. Con su última versión MYSQL 5.0 anexa nuevas características importantes que lo hacen más competitivo con manejadores como SQL Server, Sybase y Oracle.
+            p 
+                |&nbsp MySQL tiene las siguiente carácteristicas: 
+            ul 
+                li Escalabilidad y flexibilidad. La flexibilidad de plataforma es una característica clásica de MySQL, soportando distintas versiones de Linux, UNIX y Windows Y, por supuesto, la naturaleza open source de MySQL permite una personalización completa para aquellos que deseen añadir características al servidor.
+                li Aprovecha la potencia de sistemas multiprocesador, gracias a su implementación multihilo.
+                li Soporta gran cantidad de tipos de datos para las columnas.
+                li Dispone de API's en gran cantidad de lenguajes (C, C++, Java, PHP, etc).
+                li Gran portabilidad entre sistemas.
+                li Soporta hasta 32 índices por tabla.
+                li Gestión de usuarios y passwords, manteniendo un muy buen nivel de seguridad en los datos.
+                li Condición de open source de MySQL hace que la utilización sea gratuita y se puede modificar con total libertad.
+                li Se puede descargar su código fuente. Esto ha favorecido muy positivamente en su desarrollo y continuas actualizaciones.
+                li Es una de las herramientas más utilizadas por los programadores orientados a Internet.
+                li Infinidad de librerías y otras herramientas que permiten su uso a través de gran cantidad de lenguajes de programación.
+                li Gran rapidez y facilidad de uso.
+                li Infinidad de librerías y otras herramientas que permiten su uso a través de gran cantidad de lenguajes de programación.
+            p
+                |&nbsp Para el modelo de datos se utilizó específicamente la versión MySQL 5. Esta versión cuenta con algunas características diferentes de las ya mencionadas anteriormente como son: 
+            ul
+                li Uso de transacciones ACID (Atomic, Consistent Isolated, Durable). Para construir aplicaciones más seguras mediante commit, rollback, crash recovery y bloqueo por registro.
+                li Store Procedures. Para mejorar la programación.
+                li Triggers. Para mejorar las reglas del negocio.
+                li Vistas. Para que la información sensible sea más segura.
+                li Information Schema. Para un fácil acceso a los metadatos.
+                li Transacciones Distribuidas(XA): Para soportar transacciones entre múltiples ambientes de bases de datos.
+            //- Herramienta Apache2
+            h2 Apache2
+            p
+                |&nbsp Para el uso nuestro sistema se necesita de un servidor web, ya que éste conectará con los servicios de la base de datos y mostrará los scripts que fueron realizados. Para esta tarea se uso Apache2.
+            h3 ¿Qué es Apache2?
+            p 
+                |&nbsp Es un software libre y el servidor web más popular. Algunos sondeos realizados demuestran que más del 70% de los sitios web en Internet están manejados por Apache, haciéndolo más extensamente usado que todos los otros servidores web juntos. 
+            p
+                |&nbsp Apache es un proyecto de la Fundación de Software Apache, con el objetivo de suministrar un servidor seguro, eficiente, y extensible que proporcione servicios HTTP en sincronía con los estándares HTTP actuales.
+            h3 Características
+            ul 
+                li Apache es un servidor web flexible, rápido y eficiente, continuamente actualizado y adaptado a los nuevos protocolos HTTP.
+                li Multiplataforma.
+                li Modular. Puede ser adaptado a diferentes entornos y necesidades, con los diferentes módulos de apoyo que proporciona, y con la API de programación de módulos, para el desarrollo de módulos específicos.
+                li Extensible. Gracias a ser modular se han desarrollado diversas extensiones entre las que destaca PHP, un lenguaje de programación del lado del servidor.
+            h3 Uso
+            p   
+                |&nbsp Apache es usado primariamente para enviar páginas web estáticas y dinámicas en la World Wide Web. Muchas aplicaciones web están diseñadas asumiendo como ambiente de implantación a Apache, o que utilizarán características propias de este servidor web.
+            p
+                |&nbsp Apache es el componente de servidor web en la popular plataforma de aplicaciones LAMP, junto a MySQL y los lenguajes de programación PHP/Perl/Python (y ahora también Ruby).
+            p
+                |&nbsp Este servidor web es redistribuido como parte de varios paquetes propietarios de software, incluyendo la base de datos Oracle y el IBM WebSphere application server. Mac OS X integra apache como parte de su propio servidor web y como soporte de su servidor de aplicaciones WebObjects. Es soportado de alguna manera por Borland en las herramientas de desarrollo Kylix y Delphi. Apache es incluido con Novell NetWare 6.5, donde es el servidor web por defecto, y en muchas distribuciones Linux.
+            h3 Licencia
+            p
+                |&nbsp La licencia de software bajo la cual el software de la fundación Apache es distribuido es una parte distintiva de la historia de Apache HTTP Server y de la comunidad de código abierto. La Licencia Apache permite la distribución de derivados de código abierto y cerrado a partir de su código fuente original. 
+
+             
