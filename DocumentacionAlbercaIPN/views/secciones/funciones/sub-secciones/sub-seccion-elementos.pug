@@ -8,10 +8,16 @@ section(class="section-custom" id="sub-seccion-elementos")
                     h3 Se tienen las siguentes clases:
                     ul
                         li Alumno.php
+                        li Clase.php
                         li Convocatoria.php
-                        li Grupo.php
+                        li Dia.php
+                        li Entrenador.php
+                        li Escuela.php
+                        li Inscripcion.php
+                        li Matricula.php
                         li Preregistro.php
-                    h4 Las 4 clases contienen los siguientes 3 atributos:
+                    h3 Atributos de clase
+                    h4 Todas las clases contienen los siguientes 2 atributos:
                     ol  
                         li table
                             ul 
@@ -21,14 +27,7 @@ section(class="section-custom" id="sub-seccion-elementos")
                                 li(class="text-justify")
                                     strong Proposito: 
                                     |Almacena el nombre de la tabla en la base de datos en la que se va a almacenar la información que contenga el objeto en cuestión. Por ejemplo, si el objeto es de tipo Alumno, entonces el valor del atributo table es “Alumnos”, ya que este es el nombre de la tabla que contiene la información de los alumnos en la base de datos.
-                        li primaryKey
-                            ul 
-                                li 
-                                    strong Tipo de dato: 
-                                    |&nbsp;Cadena
-                                li(class="text-justify")
-                                    strong Proposito:
-                                    |&nbsp;Almacena el nombre del campo que es llave primaria de la tabla en cuestión de la base de datos. Por ejemplo, para la clase Convocatoria, el valor de este atributo es “idConvocatoria”, porque este es el nombre del campo que funge como llave primaria en la tabla Convocatorias.
+                        
                         li fillable
                             ul 
                                 li 
@@ -40,11 +39,144 @@ section(class="section-custom" id="sub-seccion-elementos")
                         p(class="text-justify")
                             strong Nota:
                             |&nbsp;En Laravel se considera como un hecho que las llaves primarias de las tablas de una base de datos son de tipo entero autoincrementale. Pero es bien sabido que esto no siempre es así. Por lo que se necesita indicar cuando este no es el caso mediante un atributo de tipo booleano. El atributo “incrementng” solamente es parte de la clase Alumno.php y Convocatoria.php, ya que las llaves primarias de las dos tablas que almacenarán la información de los objetos tanto de tipo Alumno como de tipo Convocatoria, son cadenas de caracteres.
-                        li incremeanting
+                        
+                    h4 Otros atributos que comparten la mayoría de las clases son los siguientes:
+                    ol
+                        li incrementing
                             ul 
                                 li 
                                     strong Tipo de dato:
                                     |&nbsp;Booleano
                                 li(class="text-justify")
                                     strong Proposito: 
-                                    |Bandera que da la señal al framework Laravel de que la llave primaria de la tabla en cuestión es o no un entero autoincremental. Para el caso de la clase Alumno.php y Convocatoria.php, el valor del atributo incrementing se establece como false para indicar que ni el tipo de dato de la llave primaria de la tabla Alumnos ni el de la llave primaria de la tabla Convocatorias no es un entero autoincremental.
+                                    |Bandera que da la señal al framework Laravel de que la llave primaria de la tabla en cuestión es o no un entero autoincremental. Para el caso de la clase Alumno.php y Convocatoria.php, el valor del atributo incrementing se establece como false para indicar que ni el tipo de dato de la llave primaria de la tabla Alumnos ni el de la llave primaria de la tabla Convocatorias no es un entero autoincremental. Las clases que contienen este atributo son las siguientes:
+                                    ul
+                                        li Alumno.php
+                                        li Convocatoria.php
+                                        li Entrenador.php
+                                        li Escuela.php
+
+                        li primaryKey
+                            ul 
+                                li 
+                                    strong Tipo de dato: 
+                                    |&nbsp;Cadena
+                                li(class="text-justify")
+                                    strong Proposito:
+                                    |&nbsp;Almacena el nombre del campo que es llave primaria de la tabla en cuestión en la base de datos. Por ejemplo, para la clase Convocatoria, el valor de este atributo es “idConvocatoria”, porque este es el nombre del campo que funge como llave primaria en la tabla Convocatorias. La única clase que no contiene este atributo es la clase Inscripcion.php
+                    
+                        li timestamps
+                            ul 
+                                li 
+                                    strong Tipo de dato: 
+                                    |&nbsp;Cadena
+                                li(class="text-justify")
+                                    strong Proposito:
+                                    |&nbsp;Atributo que sirve para almacenar fechas u horas. Las clases que contienen este atributo son las siguientes:
+                                    ul
+                                        li Dia.php
+                                        li Entrenador.php
+                                        li Escuela.php
+                                        li Matricula.php
+
+                    h3 Métodos de clase
+                    h4 No todas las clases contienen métodos. A continuación se enlistan los métodos existentes:
+                    ol
+                        li Alumno.php
+                            ul
+                                li escuela
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene un alumno con una escuela. Hace alusión a la relación que hay entre la tabla Alumno y la tabla Escuela en la base de datos.   
+                                li clases
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene un alumno con las clases en las que está inscrito. Hace alusión a la relación que hay entre la tabla Alumno y la tabla Clase en la base de datos.
+                        li Clase.php
+                            ul
+                                li matricula
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene una clase con una matrícula. Hace alusión a la relación que hay entre la tabla Clase y la tabla Matricula en la base de datos.   
+                                li alumnos
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene una clase los alumnos que están inscritos en ella. Hace alusión a la relación que hay entre la tabla Alumno y la tabla Clase en la base de datos.
+                        li Dia.php
+                            ul
+                                li matriculas
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene un día con las matrículas de las clases que se dan ese día. Hace alusión a la relación que hay entre la tabla Dia y la tabla Matricula en la base de datos.   
+                        li Escuela.php
+                            ul
+                                li alumnos
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene una escuela con las matrículas los alumnos que están inscritos en ella. Hace alusión a la relación que hay entre la tabla Escuela y la tabla Alumno en la base de datos.
+                        li Matricula.php
+                            ul
+                                li clases
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene una matrícula con distintas clases. Hace alusión a la relación que hay entre la tabla Matricula y la tabla Clase en la base de datos.
+                                li dias
+                                ul
+                                    li
+                                        strong Recibe:
+                                        |&nbsp;No recibe ningún parámetro
+                                    li
+                                        strong Regresa:
+                                        |&nbsp;Cadena
+                                    li
+                                        strong Proposito:
+                                        |&nbsp;Indica la asociación que tiene los días y las distintas matrículas. Hace alusión a la relación que hay entre la tabla Matricula y la tabla Dia en la base de datos.
